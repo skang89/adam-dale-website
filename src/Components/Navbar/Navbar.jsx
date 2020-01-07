@@ -44,7 +44,14 @@ const Navbar = ({ onMenuClick }) => {
               </a>
             </li>
             <li>
-              <Link to="#">Contact</Link>
+              <a
+                href="mailto:hello@adamjdale.com?subject=Let's work together...&body=Send me a message describing what you're looking to achieve... "
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Contact Adam Dale at hello@adamjdale.com"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>

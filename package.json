@@ -1,12 +1,14 @@
 {
   "name": "adam-dale-website",
   "version": "0.1.0",
-  "private": true,
+  "author": "shivkang.com",
+  "homepage": "https://skang89.github.io/adam-dale-website",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "bulma": "^0.8.0",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -17,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
