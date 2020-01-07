@@ -1,7 +1,8 @@
 // import react packages
 import React from "react";
+import { Link } from "react-router-dom";
 
-//import styles
+// import styles
 import "./Navbar.scss";
 
 const Navbar = ({ onMenuClick }) => {
@@ -33,18 +34,25 @@ const Navbar = ({ onMenuClick }) => {
               </h2>
             </li>
             <li>
-              <a href="#">Instagram</a>
+              <a
+                href="https://www.instagram.com/adamnjdale/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Adam Dale Instagram"
+              >
+                Instagram
+              </a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="#">Contact</Link>
             </li>
           </ul>
         </nav>
       </div>
 
-      <a href="/" className="ad-logo">
+      <Link to="/" className="ad-logo">
         <h1>Adam</h1>
-      </a>
+      </Link>
     </header>
   );
 };

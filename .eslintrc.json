@@ -31,7 +31,6 @@
       "error",
       {
         "tabWidth": 2,
-        "printWidth": 90,
         "singleQuote": false
       }
     ]
