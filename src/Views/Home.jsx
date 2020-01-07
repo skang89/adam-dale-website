@@ -25,7 +25,7 @@ class Home extends Component {
   render() {
     return (
       <>
-        <div className="container is-fluid">
+        <div className="container ad-container">
           <Navbar onMenuClick={this.onMenuClick} />
         </div>
         <Slideshow />

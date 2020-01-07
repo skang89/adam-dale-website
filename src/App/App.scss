@@ -71,6 +71,9 @@ h6 {
 }
 
 h1 {
+  @media screen and (max-width: 768px) {
+    font-size: 38px;
+  }
   font-size: 48px;
 }
 
@@ -85,4 +88,15 @@ a {
     opacity: 0.7;
     color: white;
   }
+}
+
+.ad-container {
+  @media screen and (max-width: 768px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  padding-right: 32px;
+  padding-left: 32px;
+  max-width: none;
+  width: 100%;
 }
