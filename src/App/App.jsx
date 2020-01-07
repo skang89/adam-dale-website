@@ -1,19 +1,22 @@
 // import react packages
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // import styles
 import "./App.scss";
 
 // import components
-import Navbar from "../Components/Navbar/Navbar";
-import Slideshow from "../Components/Slideshow/Slideshow";
+import Home from "../Views/Home";
 
 const App = () => {
   return (
-    <div>
-      {/* <Navbar /> */}
-      <Slideshow />
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path="" component={Home} />
+        </Switch>
+      </Router>
+    </>
   );
 };
 
