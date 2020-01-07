@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/adam-dale-website/static/css/main.6460732f.chunk.css",
+    "main.js": "/adam-dale-website/static/js/main.3daad20d.chunk.js",
+    "main.js.map": "/adam-dale-website/static/js/main.3daad20d.chunk.js.map",
+    "runtime-main.js": "/adam-dale-website/static/js/runtime-main.d23eb2c0.js",
+    "runtime-main.js.map": "/adam-dale-website/static/js/runtime-main.d23eb2c0.js.map",
+    "static/js/2.e1afaae2.chunk.js": "/adam-dale-website/static/js/2.e1afaae2.chunk.js",
+    "static/js/2.e1afaae2.chunk.js.map": "/adam-dale-website/static/js/2.e1afaae2.chunk.js.map",
+    "index.html": "/adam-dale-website/index.html",
+    "precache-manifest.2ddfcd1ae0208b13004b6c9e7fb793c8.js": "/adam-dale-website/precache-manifest.2ddfcd1ae0208b13004b6c9e7fb793c8.js",
+    "service-worker.js": "/adam-dale-website/service-worker.js",
+    "static/css/main.6460732f.chunk.css.map": "/adam-dale-website/static/css/main.6460732f.chunk.css.map",
+    "static/js/2.e1afaae2.chunk.js.LICENSE": "/adam-dale-website/static/js/2.e1afaae2.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d23eb2c0.js",
+    "static/js/2.e1afaae2.chunk.js",
+    "static/css/main.6460732f.chunk.css",
+    "static/js/main.3daad20d.chunk.js"
+  ]
+}
