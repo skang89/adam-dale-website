@@ -3,13 +3,16 @@ import React from "react";
 
 // import styles
 import "./App.scss";
+
+// import components
 import Navbar from "../Components/Navbar/Navbar";
+import Slideshow from "../Components/Slideshow/Slideshow";
 
 const App = () => {
   return (
     <div>
-      <h1>Adam Dale Website</h1>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Slideshow />
     </div>
   );
 };
