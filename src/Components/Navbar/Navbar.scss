@@ -1,4 +1,7 @@
 .ad-navbar {
+  @media screen and (max-width: 768px) {
+    min-height: 3.25rem;
+  }
   background-color: transparent;
   min-height: 6.25rem;
   position: relative;
