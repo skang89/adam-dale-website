@@ -1,15 +1,12 @@
 .ad-navbar {
-  @media screen and (max-width: 768px) {
-    min-height: 3.25rem;
-  }
   background-color: transparent;
-  min-height: 6.25rem;
-  position: relative;
-  display: flex;
+  @media screen and (min-width: 768px) {
+    padding: 30px 0;
+  }
 
   .ad-logo {
     position: absolute;
-    right: 14px;
+    right: 8px;
     top: 50%;
     transform: translateY(-50%);
     opacity: 1;
@@ -25,14 +22,11 @@
 
   .ad-menu {
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 68px;
-    vertical-align: middle;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    overflow: hidden;
     z-index: 999;
     opacity: 1;
     transition: 0.25s;
@@ -43,49 +37,82 @@
       opacity: 0.7;
     }
 
-    &--active {
-      transform: rotate(45deg);
-
-      .ad-menu-line {
-        &--top {
-          stroke-dashoffset: -66px;
-        }
-        &--middle {
-          // stroke-dashoffset: -20px;
-          transform: rotate(90deg);
-        }
-        &--bottom {
-          stroke-dashoffset: -65px;
-        }
-      }
+    &__icon {
+      position: absolute;
+      width: 34px;
+      height: 23px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
-    &-line {
-      fill: none;
-      transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-      stroke: white;
-      stroke-width: 5.5;
-      stroke-linecap: square;
+    &__line {
+      position: absolute;
+      left: 0;
+      background-color: white;
+      height: 3px;
+      width: 100%;
+      pointer-events: none;
 
       &--top {
-        stroke-dasharray: 40 160;
+        top: 0;
       }
 
       &--middle {
-        stroke-dasharray: 40 142;
-        transform-origin: 50%;
-        transition: transform 400ms;
+        top: 0;
+        bottom: 0;
+        margin: auto;
       }
 
       &--bottom {
-        stroke-dasharray: 40 85;
-        transform-origin: 50%;
-        transition: transform 400ms, stroke-dashoffset 400ms;
+        bottom: 0;
       }
     }
-  }
 
-  .ad-menu {
+    &__line--top {
+      transition: transform 0.3s ease-in-out, top 0.2s ease-in-out 0.3s;
+    }
+
+    &__line--top:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      transition: transform 0.1s ease-in-out 0.2s;
+    }
+
+    &__line--middle {
+      transition: opacity 0s ease-in-out 0.3s;
+    }
+
+    &__line--bottom {
+      transition: opacity 0s ease-in-out 0.3s, bottom 0.2s ease-in-out 0.3s;
+    }
+
+    &--active {
+      .ad-menu__line {
+        &--top {
+          top: (23px - 3px) / 2;
+          transform: rotate(135deg);
+          transition: top 0.3s ease-in-out, transform 0.3s linear 0.3s;
+          &:before {
+            transform: rotate(90deg);
+            transition: transform 0.1s ease-in-out 0.3s;
+          }
+        }
+        &--middle {
+          opacity: 0;
+          transition: opacity 0s ease-in-out 0.3s;
+        }
+        &--bottom {
+          bottom: (23px - 3px) / 2;
+          opacity: 0;
+          transition: bottom 0.3s ease-in-out, opacity 0s ease-in-out 0.3s;
+        }
+      }
+    }
+
     &-overlay {
       position: fixed;
       top: 0;

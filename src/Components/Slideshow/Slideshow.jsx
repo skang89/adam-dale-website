@@ -2,7 +2,7 @@
 import React from "react";
 
 const Slideshow = () => {
-  return <div id="rbgShiftSlider" className="rgbShiftSlider"></div>;
+  return <div id="rbgShiftSlider" className="rgbShiftSlider" />;
 };
 
 export default Slideshow;
