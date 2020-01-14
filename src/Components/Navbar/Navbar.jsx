@@ -12,7 +12,7 @@ const Navbar = ({ onMenuClick }) => {
         <button
           className="adw-menu"
           id="adw-menu"
-          role="button"
+          type="button"
           onClick={onMenuClick}
         >
           <div className="adw-menu__icon">
