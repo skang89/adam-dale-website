@@ -41,7 +41,6 @@ const Slideshow = () => {
 
           <div className="adw-slider__item">
             <img src="assets/images/desktop/HI_Logo.png" alt="HI logo" />
-            <img src="" alt="HI logo" className="is-hidden-tablet" />
           </div>
 
           <div className="adw-slider__item">
@@ -130,7 +129,6 @@ const Slideshow = () => {
 
           <div className="adw-slider__item">
             <img src="assets/images/desktop/HI_Logo.png" alt="HI logo" />
-            <img src="" alt="HI logo" className="is-hidden-tablet" />
           </div>
 
           <div className="adw-slider__item">
