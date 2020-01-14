@@ -9,13 +9,18 @@ const Navbar = ({ onMenuClick }) => {
   return (
     <div className="container adw-container">
       <header className="adw-navbar navbar">
-        <div className="adw-menu" id="adw-menu" onClick={onMenuClick}>
+        <button
+          className="adw-menu"
+          id="adw-menu"
+          role="button"
+          onClick={onMenuClick}
+        >
           <div className="adw-menu__icon">
             <div className="adw-menu__line adw-menu__line--top" />
             <div className="adw-menu__line adw-menu__line--middle" />
             <div className="adw-menu__line adw-menu__line--bottom" />
           </div>
-        </div>
+        </button>
 
         <div className="adw-menu-overlay " id="adw-menu-overlay">
           <nav className="adw-menu-overlay-menu">
