@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/adam-dale-website/static/css/main.56e53eb5.chunk.css",
-    "main.js": "/adam-dale-website/static/js/main.a2c974fc.chunk.js",
-    "main.js.map": "/adam-dale-website/static/js/main.a2c974fc.chunk.js.map",
+    "main.js": "/adam-dale-website/static/js/main.d7e3c4f9.chunk.js",
+    "main.js.map": "/adam-dale-website/static/js/main.d7e3c4f9.chunk.js.map",
     "runtime-main.js": "/adam-dale-website/static/js/runtime-main.d23eb2c0.js",
     "runtime-main.js.map": "/adam-dale-website/static/js/runtime-main.d23eb2c0.js.map",
-    "static/css/2.7bc6f560.chunk.css": "/adam-dale-website/static/css/2.7bc6f560.chunk.css",
-    "static/js/2.afc0a84c.chunk.js": "/adam-dale-website/static/js/2.afc0a84c.chunk.js",
-    "static/js/2.afc0a84c.chunk.js.map": "/adam-dale-website/static/js/2.afc0a84c.chunk.js.map",
+    "static/css/2.0b0f1eb5.chunk.css": "/adam-dale-website/static/css/2.0b0f1eb5.chunk.css",
+    "static/js/2.533ef6dd.chunk.js": "/adam-dale-website/static/js/2.533ef6dd.chunk.js",
+    "static/js/2.533ef6dd.chunk.js.map": "/adam-dale-website/static/js/2.533ef6dd.chunk.js.map",
     "index.html": "/adam-dale-website/index.html",
-    "precache-manifest.3275074d993693110d1b65cb4c8be085.js": "/adam-dale-website/precache-manifest.3275074d993693110d1b65cb4c8be085.js",
+    "precache-manifest.a2a737045c216ae9a72441a50bbe0bf7.js": "/adam-dale-website/precache-manifest.a2a737045c216ae9a72441a50bbe0bf7.js",
     "service-worker.js": "/adam-dale-website/service-worker.js",
-    "static/css/2.7bc6f560.chunk.css.map": "/adam-dale-website/static/css/2.7bc6f560.chunk.css.map",
+    "static/css/2.0b0f1eb5.chunk.css.map": "/adam-dale-website/static/css/2.0b0f1eb5.chunk.css.map",
     "static/css/main.56e53eb5.chunk.css.map": "/adam-dale-website/static/css/main.56e53eb5.chunk.css.map",
-    "static/js/2.afc0a84c.chunk.js.LICENSE": "/adam-dale-website/static/js/2.afc0a84c.chunk.js.LICENSE",
+    "static/js/2.533ef6dd.chunk.js.LICENSE": "/adam-dale-website/static/js/2.533ef6dd.chunk.js.LICENSE",
     "static/media/App.scss": "/adam-dale-website/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d23eb2c0.js",
-    "static/css/2.7bc6f560.chunk.css",
-    "static/js/2.afc0a84c.chunk.js",
+    "static/css/2.0b0f1eb5.chunk.css",
+    "static/js/2.533ef6dd.chunk.js",
     "static/css/main.56e53eb5.chunk.css",
-    "static/js/main.a2c974fc.chunk.js"
+    "static/js/main.d7e3c4f9.chunk.js"
   ]
 }
