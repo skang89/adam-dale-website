@@ -7,18 +7,18 @@ import "./Navbar.scss";
 
 const Navbar = ({ onMenuClick }) => {
   return (
-    <div className="container ad-container">
-      <header className="ad-navbar navbar">
-        <div className="ad-menu" id="ad-menu" onClick={onMenuClick}>
-          <div className="ad-menu__icon">
-            <div className="ad-menu__line ad-menu__line--top" />
-            <div className="ad-menu__line ad-menu__line--middle" />
-            <div className="ad-menu__line ad-menu__line--bottom" />
+    <div className="container adw-container">
+      <header className="adw-navbar navbar">
+        <div className="adw-menu" id="adw-menu" onClick={onMenuClick}>
+          <div className="adw-menu__icon">
+            <div className="adw-menu__line adw-menu__line--top" />
+            <div className="adw-menu__line adw-menu__line--middle" />
+            <div className="adw-menu__line adw-menu__line--bottom" />
           </div>
         </div>
 
-        <div className="ad-menu-overlay " id="ad-menu-overlay">
-          <nav className="ad-menu-overlay-menu">
+        <div className="adw-menu-overlay " id="adw-menu-overlay">
+          <nav className="adw-menu-overlay-menu">
             <ul>
               <li>
                 <h2>
@@ -51,7 +51,7 @@ const Navbar = ({ onMenuClick }) => {
           </nav>
         </div>
 
-        <Link to="/" className="ad-logo">
+        <Link to="/" className="adw-logo">
           <h1>Adam</h1>
         </Link>
       </header>

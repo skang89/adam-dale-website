@@ -8,17 +8,19 @@ import Slideshow from "../Components/Slideshow/Slideshow";
 class Home extends Component {
   onMenuClick = () => {
     if (
-      !document.getElementById("ad-menu").classList.contains("ad-menu--active")
+      !document
+        .getElementById("adw-menu")
+        .classList.contains("adw-menu--active")
     ) {
-      document.getElementById("ad-menu").classList.toggle("ad-menu--active");
+      document.getElementById("adw-menu").classList.toggle("adw-menu--active");
       document
-        .getElementById("ad-menu-overlay")
-        .classList.toggle("ad-menu-overlay--open");
+        .getElementById("adw-menu-overlay")
+        .classList.toggle("adw-menu-overlay--open");
     } else {
-      document.getElementById("ad-menu").classList.remove("ad-menu--active");
+      document.getElementById("adw-menu").classList.remove("adw-menu--active");
       document
-        .getElementById("ad-menu-overlay")
-        .classList.remove("ad-menu-overlay--open");
+        .getElementById("adw-menu-overlay")
+        .classList.remove("adw-menu-overlay--open");
     }
   };
 
