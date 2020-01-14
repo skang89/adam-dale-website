@@ -167,16 +167,11 @@
         position: relative;
         height: 100%;
         text-align: left;
-        padding: 0 50px;
         z-index: 100;
-
-        h2 {
-          @media screen and (max-width: 768px) {
-            font-size: 38px;
-          }
-          font-size: 62px;
-          margin-bottom: 30px;
+        @media screen and (max-width: 768px) {
+          padding: 0 45px;
         }
+        padding: 0 50px;
 
         ul {
           list-style: none;
@@ -189,20 +184,24 @@
 
           li {
             display: block;
-            min-height: 50px;
+            // min-height: 50px;
             position: relative;
             opacity: 0;
 
             a {
+              @media screen and (max-width: 768px) {
+                font-size: 22px; // decreased by about 60%
+              }
+              @media screen and (min-width: 769px) and (max-width: 1024px) {
+                font-size: 36px; // decreased by about 30%
+              }
+              font-size: 52px;
               display: inline-block;
               position: relative;
               color: white;
               text-decoration: none;
               overflow: hidden;
-              font-size: 52px;
-              @media screen and (max-width: 768px) {
-                font-size: 28px;
-              }
+              line-height: 1.1;
 
               &:hover:after,
               &:focus:after,

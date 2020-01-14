@@ -25,9 +25,7 @@ class Home extends Component {
   render() {
     return (
       <>
-        <div className="container ad-container">
-          <Navbar onMenuClick={this.onMenuClick} />
-        </div>
+        <Navbar onMenuClick={this.onMenuClick} />
         <Slideshow />
       </>
     );

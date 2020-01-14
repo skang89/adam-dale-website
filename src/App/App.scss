@@ -17,6 +17,11 @@ $off-black: #222222;
 @import "../../node_modules/bulma/sass/layout/section.sass";
 @import "../../node_modules/bulma/sass/components/navbar.sass";
 
+// import carousel css
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+@import "../../node_modules/slick-carousel/slick/slick.css";
+
+// custom
 *:after,
 *:before {
   -moz-box-sizing: border-box;
@@ -45,13 +50,25 @@ h5,
 h6 {
   font-weight: 900;
   letter-spacing: 1.6px;
+  line-height: 1.1;
 }
 
 h1 {
   @media screen and (max-width: 768px) {
-    font-size: 38px;
+    font-size: 36px; // decreased by 30%
   }
   font-size: 48px;
+}
+
+h2 {
+  @media screen and (max-width: 768px) {
+    font-size: 34px; // decreased by 60%
+  }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    font-size: 58px; // decreased by 30%
+  }
+  font-size: 82px;
+  margin-bottom: 30px;
 }
 
 a {
@@ -76,4 +93,7 @@ a {
   padding-left: 32px;
   max-width: none;
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
 }
