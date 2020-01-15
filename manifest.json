@@ -21,8 +21,8 @@
   "serviceworker": {
     "src": "./serviceworker.js"
   },
-  "scope": "/",
-  "start_url": "/",
+  "scope": ".",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#000000"
