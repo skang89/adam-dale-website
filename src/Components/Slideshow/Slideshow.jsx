@@ -115,85 +115,94 @@ const Slideshow = () => {
         <Slider {...settings}>
           <div className="adw-slider__item">
             <img
-              src="assets/images/desktop/WMCA_Brindley_Place.jpg"
+              src="assets/images/mobile/WMCA_Brindley_Place_Mobile.jpg"
               alt="West Midlands Combined Authority Brindley Place"
             />
           </div>
 
           <div className="adw-slider__item">
             <img
-              src="assets/images/desktop/WMCA_Library.jpg"
+              src="assets/images/mobile/WMCA_Library_Mobile.jpg"
               alt="West Midlands Combined Authority Library"
             />
           </div>
 
           <div className="adw-slider__item">
-            <img src="assets/images/desktop/HI_Logo.png" alt="HI logo" />
+            <img src="assets/images/mobile/HI_Logo_Mobile.png" alt="HI logo" />
           </div>
 
           <div className="adw-slider__item">
             <img
-              src="assets/images/desktop/HI_Beer_Can.jpg"
+              src="assets/images/mobile/HI_Beer_Can_Mobile.jpg"
               alt="HI beer can"
             />
           </div>
 
           <div className="adw-slider__item">
             <img
-              src="assets/images/desktop/HI_Mobile_Website.jpg"
+              src="assets/images/mobile/HI_Mobile_Website_Mobile.jpg"
               alt="HI mobile website"
             />
           </div>
 
           <div className="adw-slider__item">
-            <img src="assets/images/desktop/She_Lead.png" alt="She lead" />
-          </div>
-
-          <div className="adw-slider__item">
-            <img src="assets/images/desktop/Ittimaas.png" alt="Ittimaas" />
+            <img
+              src="assets/images/mobile/She_Lead_Mobile.png"
+              alt="She lead"
+            />
           </div>
 
           <div className="adw-slider__item">
             <img
-              src="assets/images/desktop/Ittimaas_Stationary.jpg"
+              src="assets/images/mobile/Ittimaas_Mobile.png"
+              alt="Ittimaas"
+            />
+          </div>
+
+          <div className="adw-slider__item">
+            <img
+              src="assets/images/mobile/Ittimaas_Stationary_Mobile.jpg"
               alt="Ittimaas stationary"
             />
           </div>
 
           <div className="adw-slider__item">
-            <img src="assets/images/desktop/SOB_Logos.png" alt="SOB Logo" />
-          </div>
-
-          <div className="adw-slider__item">
-            <img src="assets/images/desktop/SOB_Posters.jpg" alt="SOB poster" />
+            <img src="assets/images/mobile/SOB_Mobile.png" alt="SOB Logo" />
           </div>
 
           <div className="adw-slider__item">
             <img
-              src="assets/images/desktop/SOB_Book_Cover.jpg"
+              src="assets/images/mobile/SOB_Posters_Mobile.jpg"
+              alt="SOB poster"
+            />
+          </div>
+
+          <div className="adw-slider__item">
+            <img
+              src="assets/images/mobile/SOB_Book_Cover_Mobile.jpg"
               alt="SOB book cover"
             />
           </div>
 
           <div className="adw-slider__item">
-            <img src="assets/images/desktop/Kachun.png" alt="Kachun" />
+            <img src="assets/images/mobile/Kachun_Mobile.png" alt="Kachun" />
           </div>
 
           <div className="adw-slider__item">
-            <img src="assets/images/desktop/CM_Font.png" alt="CM Font" />
+            <img src="assets/images/mobile/CM_Font_Mobile.png" alt="CM Font" />
           </div>
 
           <div className="adw-slider__item">
-            <img src="assets/images/desktop/CM_Wall.jpg" alt="CM  Wall" />
+            <img src="assets/images/mobile/CM_Wall_Mobile.jpg" alt="CM  Wall" />
           </div>
 
           <div className="adw-slider__item">
-            <img src="assets/images/desktop/NCVO.png" alt="NCVO" />
+            <img src="assets/images/mobile/NCVO_Mobile.png" alt="NCVO" />
           </div>
 
           <div className="adw-slider__item">
             <img
-              src="assets/images/desktop/David_Cobley.jpg"
+              src="assets/images/mobile/David_Cobley_Mobile.jpg"
               alt="David Cobley"
             />
           </div>
