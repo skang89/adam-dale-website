@@ -1,6 +1,12 @@
 // import react packages
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 
 // import styles
 import "./App.scss";
@@ -11,11 +17,12 @@ import Home from "../Views/Home";
 const App = () => {
   return (
     <>
-      <Router>
+      <HashRouter>
         <Switch>
-          <Route exact path="" component={Home} />
+          <Route exact path="/" component={Home} />
+          <Redirect to="/" />
         </Switch>
-      </Router>
+      </HashRouter>
     </>
   );
 };
