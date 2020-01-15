@@ -28,6 +28,10 @@ $off-black: #222222;
   box-sizing: border-box;
 }
 
+*:focus {
+  outline-color: white;
+}
+
 body,
 html {
   height: 100vh;
