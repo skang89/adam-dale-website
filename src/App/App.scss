@@ -6,9 +6,6 @@
 // Update Bulma's global variables
 $family-sans-serif: "Work Sans", sans-serif;
 
-// Set your brand colors
-$off-black: #222222;
-
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/_all.sass";
@@ -41,7 +38,7 @@ html {
 body {
   color: $white;
   font-weight: 900;
-  background-color: $off-black;
+  background-color: $black;
   margin: 0;
 }
 

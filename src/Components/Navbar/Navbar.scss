@@ -133,7 +133,7 @@
 
       &:after {
         content: "";
-        background: #222222;
+        background: black;
         left: -100%;
         top: 0;
         width: 100%;
@@ -143,12 +143,12 @@
       }
 
       &--open {
-        opacity: 0.9;
         visibility: visible;
         height: 100%;
 
         &:after {
           left: 0;
+          opacity: 0.8;
         }
 
         h2,
