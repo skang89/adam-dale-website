@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "./Slideshow.scss";
 
 const Slideshow = () => {
-  const settings = {
+  const sliderSettings = {
     autoplay: true,
     autoplaySpeed: 2250,
     arrows: false,
@@ -24,7 +24,7 @@ const Slideshow = () => {
   return (
     <>
       <section className="adw-slider is-hidden-mobile">
-        <Slider {...settings}>
+        <Slider {...sliderSettings}>
           <div className="adw-slider__item">
             <img
               src="assets/images/desktop/WMCA_Brindley_Place.jpg"
@@ -112,7 +112,7 @@ const Slideshow = () => {
         </Slider>
       </section>
       <section className="adw-slider is-hidden-tablet">
-        <Slider {...settings}>
+        <Slider {...sliderSettings}>
           <div className="adw-slider__item">
             <img
               src="assets/images/mobile/WMCA_Brindley_Place_Mobile.jpg"
