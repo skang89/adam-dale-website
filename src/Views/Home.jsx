@@ -24,11 +24,17 @@ class Home extends Component {
     }
   };
 
+  onCurrentSlide {
+    if (document.querySelector(".slick-active div .adw-slider__item--light")) {
+      return (document.querySelector(".adw-logo").style.color = "black");
+    }
+  };
+
   render() {
     return (
       <>
         <Navbar onMenuClick={this.onMenuClick} />
-        <Slideshow />
+        <Slideshow onCurrentSlide={this.onCurrentSlide} />
       </>
     );
   }

@@ -5,26 +5,26 @@ import Slider from "react-slick";
 // import styles
 import "./Slideshow.scss";
 
-const Slideshow = () => {
+const Slideshow = ({ onCurrentSlide }) => {
   const sliderSettings = {
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2250,
     arrows: false,
-    draggable: false,
+    draggable: true,
     fade: true,
     infinite: true,
     speed: 500,
     pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    swipe: false,
-    touchMove: false
+    swipe: true,
+    touchMove: true
   };
 
   return (
     <>
       <section className="adw-slider is-hidden-mobile">
-        <Slider {...sliderSettings}>
+        <Slider {...sliderSettings} onChange={onCurrentSlide}>
           <div className="adw-slider__item">
             <img
               src="assets/images/desktop/WMCA_Brindley_Place.jpg"
@@ -39,11 +39,11 @@ const Slideshow = () => {
             />
           </div>
 
-          <div className="adw-slider__item adw-slider__item--light">
+          <div className="adw-slider__item">
             <img src="assets/images/desktop/HI_Logo.png" alt="HI logo" />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item adw-slider__item--light">
             <img
               src="assets/images/desktop/HI_Beer_Can.jpg"
               alt="HI beer can"
