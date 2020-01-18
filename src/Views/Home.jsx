@@ -24,7 +24,7 @@ class Home extends Component {
     }
   };
 
-  onCurrentSlide {
+  onCurrentSlide = () => {
     if (document.querySelector(".slick-active div .adw-slider__item--light")) {
       return (document.querySelector(".adw-logo").style.color = "black");
     }
