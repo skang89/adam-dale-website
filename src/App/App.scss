@@ -50,7 +50,7 @@ h5,
 h6 {
   font-weight: 900;
   letter-spacing: 1.6px;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h1 {
@@ -87,6 +87,10 @@ a {
 img:focus {
   border: none;
   outline: none;
+}
+
+li {
+  line-height: 1;
 }
 
 .adw-container {

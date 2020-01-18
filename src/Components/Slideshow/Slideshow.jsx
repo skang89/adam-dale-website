@@ -39,7 +39,7 @@ const Slideshow = () => {
             />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item adw-slider__item--light">
             <img src="assets/images/desktop/HI_Logo.png" alt="HI logo" />
           </div>
 

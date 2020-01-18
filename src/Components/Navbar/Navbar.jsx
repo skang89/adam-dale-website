@@ -27,8 +27,7 @@ const Navbar = ({ onMenuClick }) => {
             <ul>
               <li>
                 <h2>
-                  Graphic Design & Art Direction.{" "}
-                  <br className="is-hidden-mobile" />
+                  Design & Art Direction. <br className="is-hidden-mobile" />
                   Website under construction.
                 </h2>
               </li>
