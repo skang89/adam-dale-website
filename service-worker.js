@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/adam-dale-website/precache-manifest.570edbf150e9a6e2f3edc3af8835d6fd.js"
+  "./precache-manifest.f09b8b42a80abc66fd5866cd53de3c8c.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/adam-dale-website/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("./index.html"), {
   
   blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
