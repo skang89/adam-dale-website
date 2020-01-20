@@ -10,15 +10,15 @@ const Slideshow = ({ onCurrentSlide }) => {
     autoplay: true,
     autoplaySpeed: 2250,
     arrows: false,
-    draggable: true,
+    draggable: false,
     fade: true,
     infinite: true,
-    speed: 300,
+    speed: 250,
     pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    swipe: true,
-    touchMove: true,
+    swipe: false,
+    touchMove: false,
     afterChange: current =>
       document.querySelector(".slick-active div").childNodes.forEach(slide => {
         if (slide.classList.contains("adw-slider__item--light")) {
