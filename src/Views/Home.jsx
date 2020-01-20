@@ -16,17 +16,13 @@ class Home extends Component {
       document
         .getElementById("adw-menu-overlay")
         .classList.toggle("adw-menu-overlay--open");
+      document.querySelector(".adw-logo").classList.toggle("adw-logo--light");
     } else {
       document.getElementById("adw-menu").classList.remove("adw-menu--active");
       document
         .getElementById("adw-menu-overlay")
         .classList.remove("adw-menu-overlay--open");
-    }
-  };
-
-  onCurrentSlide = () => {
-    if (document.querySelector(".slick-active div .adw-slider__item--light")) {
-      return (document.querySelector(".adw-logo").style.color = "black");
+      document.querySelector(".adw-logo").classList.remove("adw-logo--light");
     }
   };
 

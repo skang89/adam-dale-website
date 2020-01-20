@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px 0;
+
   @media screen and (max-width: 768px) {
     padding: 10px 0;
   }
@@ -17,11 +18,19 @@
     position: relative;
     z-index: 999;
 
+    &--dark {
+      color: black;
+    }
+
+    &--dark.adw-logo--light {
+      color: white;
+    }
+
     &:hover,
     &:focus,
     &:active {
       opacity: 0.7;
-      color: white;
+      // color: white;
     }
   }
 
@@ -97,6 +106,26 @@
 
     &__line--bottom {
       transition: opacity 0s ease-in-out 0.3s, bottom 0.2s ease-in-out 0.3s;
+    }
+
+    &--dark {
+      .adw-menu__line {
+        background-color: black;
+      }
+
+      .adw-menu__line--top:before {
+        background-color: black;
+      }
+    }
+
+    &--active.adw-menu--dark {
+      .adw-menu__line {
+        background-color: white;
+      }
+
+      .adw-menu__line--top:before {
+        background-color: white;
+      }
     }
 
     &--active {
@@ -220,6 +249,28 @@
             }
           }
         }
+      }
+    }
+  }
+
+  &--dark {
+    .adw-logo {
+      opacity: 1;
+      transition: 0.25s;
+      display: inline-block;
+      padding-right: 14px;
+      position: relative;
+      z-index: 999;
+
+      // &--dark {
+      //   color: black;
+      // }
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.7;
+        color: white;
       }
     }
   }

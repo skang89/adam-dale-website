@@ -7,7 +7,7 @@ import "./Slideshow.scss";
 
 const Slideshow = ({ onCurrentSlide }) => {
   const sliderSettings = {
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2250,
     arrows: false,
     draggable: true,
@@ -18,13 +18,28 @@ const Slideshow = ({ onCurrentSlide }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     swipe: true,
-    touchMove: true
+    touchMove: true,
+    afterChange: current =>
+      document.querySelector(".slick-active div").childNodes.forEach(slide => {
+        console.log(slide);
+        if (slide.classList.contains("adw-slider__item--light")) {
+          document.querySelector(".adw-logo").classList.add("adw-logo--dark");
+          document.querySelector(".adw-menu").classList.add("adw-menu--dark");
+        } else {
+          document
+            .querySelector(".adw-logo")
+            .classList.remove("adw-logo--dark");
+          document
+            .querySelector(".adw-menu")
+            .classList.remove("adw-menu--dark");
+        }
+      })
   };
 
   return (
     <>
       <section className="adw-slider is-hidden-mobile">
-        <Slider {...sliderSettings} onChange={onCurrentSlide}>
+        <Slider {...sliderSettings}>
           <div className="adw-slider__item">
             <img
               src="assets/images/desktop/WMCA_Brindley_Place.jpg"
@@ -50,7 +65,7 @@ const Slideshow = ({ onCurrentSlide }) => {
             />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item adw-slider__item--light">
             <img
               src="assets/images/desktop/HI_Mobile_Website.jpg"
               alt="HI mobile website"
@@ -76,7 +91,7 @@ const Slideshow = ({ onCurrentSlide }) => {
             <img src="assets/images/desktop/SOB_Logos.png" alt="SOB Logo" />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item adw-slider__item--light">
             <img src="assets/images/desktop/SOB_Posters.jpg" alt="SOB poster" />
           </div>
 
@@ -131,14 +146,14 @@ const Slideshow = ({ onCurrentSlide }) => {
             <img src="assets/images/mobile/HI_Logo_Mobile.png" alt="HI logo" />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item  adw-slider__item--light">
             <img
               src="assets/images/mobile/HI_Beer_Can_Mobile.jpg"
               alt="HI beer can"
             />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item adw-slider__item--light">
             <img
               src="assets/images/mobile/HI_Mobile_Website_Mobile.jpg"
               alt="HI mobile website"
@@ -159,7 +174,7 @@ const Slideshow = ({ onCurrentSlide }) => {
             />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item adw-slider__item--light">
             <img
               src="assets/images/mobile/Ittimaas_Stationary_Mobile.jpg"
               alt="Ittimaas stationary"
@@ -170,7 +185,7 @@ const Slideshow = ({ onCurrentSlide }) => {
             <img src="assets/images/mobile/SOB_Mobile.png" alt="SOB Logo" />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item adw-slider__item--light">
             <img
               src="assets/images/mobile/SOB_Posters_Mobile.jpg"
               alt="SOB poster"
@@ -192,7 +207,7 @@ const Slideshow = ({ onCurrentSlide }) => {
             <img src="assets/images/mobile/CM_Font_Mobile.png" alt="CM Font" />
           </div>
 
-          <div className="adw-slider__item">
+          <div className="adw-slider__item ">
             <img src="assets/images/mobile/CM_Wall_Mobile.jpg" alt="CM  Wall" />
           </div>
 
