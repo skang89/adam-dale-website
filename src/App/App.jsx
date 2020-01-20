@@ -2,7 +2,6 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  HashRouter,
   Switch,
   Route,
   Redirect
@@ -17,12 +16,12 @@ import Home from "../Views/Home";
 const App = () => {
   return (
     <>
-      <HashRouter>
+      <Router>
         <Switch>
           <Route exact path="/" component={Home} />
           <Redirect to="/" />
         </Switch>
-      </HashRouter>
+      </Router>
     </>
   );
 };

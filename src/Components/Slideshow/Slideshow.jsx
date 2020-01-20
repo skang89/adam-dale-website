@@ -21,7 +21,6 @@ const Slideshow = ({ onCurrentSlide }) => {
     touchMove: true,
     afterChange: current =>
       document.querySelector(".slick-active div").childNodes.forEach(slide => {
-        console.log(slide);
         if (slide.classList.contains("adw-slider__item--light")) {
           document.querySelector(".adw-logo").classList.add("adw-logo--dark");
           document.querySelector(".adw-menu").classList.add("adw-menu--dark");
