@@ -13,7 +13,7 @@ const Slideshow = ({ onCurrentSlide }) => {
     draggable: true,
     fade: true,
     infinite: true,
-    speed: 500,
+    speed: 300,
     pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
