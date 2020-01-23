@@ -59,8 +59,8 @@ const Slideshow = ({ onCurrentSlide }) => {
 
           <div className="adw-slider__item adw-slider__item--light">
             <img
-              src="assets/images/desktop/HI_Beer_Can.jpg"
-              alt="HI beer can"
+              src="assets/images/desktop/HI_Beer_Bottles.jpg"
+              alt="HI beer bottles"
             />
           </div>
 
@@ -81,8 +81,8 @@ const Slideshow = ({ onCurrentSlide }) => {
 
           <div className="adw-slider__item">
             <img
-              src="assets/images/desktop/Ittimaas_Stationary.jpg"
-              alt="Ittimaas stationary"
+              src="assets/images/desktop/Ittimaas_Box.jpg"
+              alt="Ittimaas box"
             />
           </div>
 
@@ -147,8 +147,8 @@ const Slideshow = ({ onCurrentSlide }) => {
 
           <div className="adw-slider__item  adw-slider__item--light">
             <img
-              src="assets/images/mobile/HI_Beer_Can_Mobile.jpg"
-              alt="HI beer can"
+              src="assets/images/mobile/HI_Beer_Bottle_Mobile.jpg"
+              alt="HI beer bottle"
             />
           </div>
 
@@ -175,8 +175,8 @@ const Slideshow = ({ onCurrentSlide }) => {
 
           <div className="adw-slider__item adw-slider__item--light">
             <img
-              src="assets/images/mobile/Ittimaas_Stationary_Mobile.jpg"
-              alt="Ittimaas stationary"
+              src="assets/images/mobile/Ittimaas_Box_Mobile.jpg"
+              alt="Ittimaas box"
             />
           </div>
 
