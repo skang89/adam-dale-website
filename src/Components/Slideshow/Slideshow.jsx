@@ -7,32 +7,44 @@ import "./Slideshow.scss";
 
 const Slideshow = ({ onCurrentSlide }) => {
   const sliderSettings = {
-    autoplay: true,
+    autoplay: true, // is true
     autoplaySpeed: 2250,
     arrows: false,
-    draggable: false,
+    draggable: false, // is false
     fade: true,
     infinite: true,
     speed: 500,
     pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    swipe: false,
-    touchMove: false
-    // afterChange: current =>
-    //   document.querySelector(".slick-active div").childNodes.forEach(slide => {
-    //     if (slide.classList.contains("adw-slider__item--light")) {
-    //       document.querySelector(".adw-logo").classList.add("adw-logo--dark");
-    //       document.querySelector(".adw-menu").classList.add("adw-menu--dark");
-    //     } else {
-    //       document
-    //         .querySelector(".adw-logo")
-    //         .classList.remove("adw-logo--dark");
-    //       document
-    //         .querySelector(".adw-menu")
-    //         .classList.remove("adw-menu--dark");
-    //     }
-    //   })
+    swipe: false, // is false
+    touchMove: false, // is false
+    beforeChange: (current, next) => {
+      if (document.querySelector(".slick-active").nextElementSibling) {
+        document
+          .querySelector(".slick-active")
+          .nextElementSibling.childNodes[0].childNodes.forEach(slide => {
+            console.log(slide);
+            if (slide.classList.contains("adw-slider__item--light")) {
+              console.log("yep");
+              document
+                .querySelector(".adw-logo")
+                .classList.add("adw-logo--dark");
+              document
+                .querySelector(".adw-menu")
+                .classList.add("adw-menu--dark");
+            } else {
+              console.log("nope");
+              document
+                .querySelector(".adw-logo")
+                .classList.remove("adw-logo--dark");
+              document
+                .querySelector(".adw-menu")
+                .classList.remove("adw-menu--dark");
+            }
+          });
+      }
+    }
   };
 
   return (

@@ -16,13 +16,13 @@ class Home extends Component {
       document
         .getElementById("adw-menu-overlay")
         .classList.toggle("adw-menu-overlay--open");
-      // document.querySelector(".adw-logo").classList.toggle("adw-logo--light");
+      document.querySelector(".adw-logo").classList.toggle("adw-logo--light");
     } else {
       document.getElementById("adw-menu").classList.remove("adw-menu--active");
       document
         .getElementById("adw-menu-overlay")
         .classList.remove("adw-menu-overlay--open");
-      // document.querySelector(".adw-logo").classList.remove("adw-logo--light");
+      document.querySelector(".adw-logo").classList.remove("adw-logo--light");
     }
   };
 
