@@ -13,6 +13,7 @@ const Slideshow = ({ onCurrentSlide }) => {
     draggable: false, // is false
     fade: true,
     infinite: true,
+    // lazyLoaded: "image",
     speed: 500,
     pauseOnHover: false,
     slidesToShow: 1,
@@ -24,9 +25,7 @@ const Slideshow = ({ onCurrentSlide }) => {
         document
           .querySelector(".slick-active")
           .nextElementSibling.childNodes[0].childNodes.forEach(slide => {
-            console.log(slide);
             if (slide.classList.contains("adw-slider__item--light")) {
-              console.log("yep");
               document
                 .querySelector(".adw-logo")
                 .classList.add("adw-logo--dark");
@@ -34,7 +33,6 @@ const Slideshow = ({ onCurrentSlide }) => {
                 .querySelector(".adw-menu")
                 .classList.add("adw-menu--dark");
             } else {
-              console.log("nope");
               document
                 .querySelector(".adw-logo")
                 .classList.remove("adw-logo--dark");
