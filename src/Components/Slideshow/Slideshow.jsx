@@ -19,30 +19,30 @@ const Slideshow = ({ onCurrentSlide }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     swipe: false, // is false
-    touchMove: false, // is false
-    beforeChange: (current, next) => {
-      if (document.querySelector(".slick-active").nextElementSibling) {
-        document
-          .querySelector(".slick-active")
-          .nextElementSibling.childNodes[0].childNodes.forEach(slide => {
-            if (slide.classList.contains("adw-slider__item--light")) {
-              document
-                .querySelector(".adw-logo")
-                .classList.add("adw-logo--dark");
-              document
-                .querySelector(".adw-menu")
-                .classList.add("adw-menu--dark");
-            } else {
-              document
-                .querySelector(".adw-logo")
-                .classList.remove("adw-logo--dark");
-              document
-                .querySelector(".adw-menu")
-                .classList.remove("adw-menu--dark");
-            }
-          });
-      }
-    }
+    touchMove: false // is false
+    // beforeChange: (current, next) => {
+    //   if (document.querySelector(".slick-active").nextElementSibling) {
+    //     document
+    //       .querySelector(".slick-active")
+    //       .nextElementSibling.childNodes[0].childNodes.forEach(slide => {
+    //         if (slide.classList.contains("adw-slider__item--light")) {
+    //           document
+    //             .querySelector(".adw-logo")
+    //             .classList.add("adw-logo--dark");
+    //           document
+    //             .querySelector(".adw-menu")
+    //             .classList.add("adw-menu--dark");
+    //         } else {
+    //           document
+    //             .querySelector(".adw-logo")
+    //             .classList.remove("adw-logo--dark");
+    //           document
+    //             .querySelector(".adw-menu")
+    //             .classList.remove("adw-menu--dark");
+    //         }
+    //       });
+    //   }
+    // }
   };
 
   return (
@@ -67,14 +67,14 @@ const Slideshow = ({ onCurrentSlide }) => {
             <img src="assets/images/desktop/HI_Logo.png" alt="HI logo" />
           </div>
 
-          <div className="adw-slider__item adw-slider__item--light">
+          <div className="adw-slider__item">
             <img
               src="assets/images/desktop/HI_Beer_Bottles.jpg"
               alt="HI beer bottles"
             />
           </div>
 
-          <div className="adw-slider__item adw-slider__item--light">
+          <div className="adw-slider__item">
             <img
               src="assets/images/desktop/HI_Mobile_Website.jpg"
               alt="HI mobile website"
@@ -100,7 +100,7 @@ const Slideshow = ({ onCurrentSlide }) => {
             <img src="assets/images/desktop/SOB_Logos.png" alt="SOB Logo" />
           </div>
 
-          <div className="adw-slider__item adw-slider__item--light">
+          <div className="adw-slider__item">
             <img src="assets/images/desktop/SOB_Posters.jpg" alt="SOB poster" />
           </div>
 
@@ -155,14 +155,14 @@ const Slideshow = ({ onCurrentSlide }) => {
             <img src="assets/images/mobile/HI_Logo_Mobile.png" alt="HI logo" />
           </div>
 
-          <div className="adw-slider__item  adw-slider__item--light">
+          <div className="adw-slider__item ">
             <img
               src="assets/images/mobile/HI_Beer_Bottle_Mobile.jpg"
               alt="HI beer bottle"
             />
           </div>
 
-          <div className="adw-slider__item adw-slider__item--light">
+          <div className="adw-slider__item">
             <img
               src="assets/images/mobile/HI_Mobile_Website_Mobile.jpg"
               alt="HI mobile website"
@@ -183,7 +183,7 @@ const Slideshow = ({ onCurrentSlide }) => {
             />
           </div>
 
-          <div className="adw-slider__item adw-slider__item--light">
+          <div className="adw-slider__item">
             <img
               src="assets/images/mobile/Ittimaas_Box_Mobile.jpg"
               alt="Ittimaas box"
@@ -194,7 +194,7 @@ const Slideshow = ({ onCurrentSlide }) => {
             <img src="assets/images/mobile/SOB_Mobile.png" alt="SOB Logo" />
           </div>
 
-          <div className="adw-slider__item adw-slider__item--light">
+          <div className="adw-slider__item">
             <img
               src="assets/images/mobile/SOB_Posters_Mobile.jpg"
               alt="SOB poster"
